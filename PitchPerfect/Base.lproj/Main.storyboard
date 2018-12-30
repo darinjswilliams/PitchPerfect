@@ -18,21 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhJ-C3-jwO">
-                                <rect key="frame" x="110" y="288" width="155" height="155"/>
-                                <state key="normal" image="RecordButton"/>
-                                <connections>
-                                    <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sdv-5R-ke2"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tab to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTU-gr-OFp">
-                                <rect key="frame" x="134.5" y="450.5" width="106.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8A-nY-ck2">
-                                <rect key="frame" x="155.5" y="479.5" width="64" height="64"/>
+                                <rect key="frame" x="155.5" y="442" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="5HP-68-oyR"/>
                                     <constraint firstAttribute="height" constant="64" id="YP4-LN-QC4"/>
@@ -42,13 +29,26 @@
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TA3-3m-eoD"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tab to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTU-gr-OFp">
+                                <rect key="frame" x="134.5" y="413" width="106.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhJ-C3-jwO">
+                                <rect key="frame" x="110" y="256" width="155" height="155"/>
+                                <state key="normal" image="RecordButton"/>
+                                <connections>
+                                    <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sdv-5R-ke2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="TTU-gr-OFp" firstAttribute="centerX" secondItem="yhJ-C3-jwO" secondAttribute="centerX" id="A90-nf-uIM"/>
-                            <constraint firstItem="yhJ-C3-jwO" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="dpi-Sn-HzO"/>
+                            <constraint firstItem="yhJ-C3-jwO" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-32" id="dpi-Sn-HzO"/>
                             <constraint firstItem="Y8A-nY-ck2" firstAttribute="centerX" secondItem="TTU-gr-OFp" secondAttribute="centerX" id="eO4-kX-nrJ"/>
-                            <constraint firstItem="TTU-gr-OFp" firstAttribute="top" secondItem="yhJ-C3-jwO" secondAttribute="bottom" constant="7.5" id="nji-dj-8GI"/>
+                            <constraint firstItem="TTU-gr-OFp" firstAttribute="top" secondItem="yhJ-C3-jwO" secondAttribute="bottom" constant="2" id="nji-dj-8GI"/>
                             <constraint firstItem="yhJ-C3-jwO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qxt-xk-OLE"/>
                             <constraint firstItem="Y8A-nY-ck2" firstAttribute="top" secondItem="TTU-gr-OFp" secondAttribute="bottom" constant="8" id="vC3-Z5-f7X"/>
                         </constraints>

@@ -67,6 +67,12 @@ class PlaySoundsViewController: UIViewController {
         super.viewWillAppear(animated)
         //configureUI - reset buttons to proper state when playing or not playing
         configureUI(.notPlaying)
+        
+        //For smaller devices setting contentMode to scaleAspectFit to eliminate images appear stretched
+        for button:UIButton in  [ snailButton, rabbitButton, chipmunkButton, vaderButton, echoButton, reverbButton] {
+            button.contentMode = .scaleAspectFit
+            button.imageView?.contentMode = .scaleAspectFit
+        }
     }
 
 }
